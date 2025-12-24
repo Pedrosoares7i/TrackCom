@@ -1,45 +1,110 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #f5f5f5;
 }
 
-#Logo {
-    width: 200px;
-    height: auto;
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
 }
 
-nav{
+.Como-funciona {
     display: flex;
-    align-items: center;
-    gap: 20px;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#card1,
+#card2,
+#card3 {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    background-color: #F5F7FA;
-    justify-content: center;
+    width: 200px;
 }
 
-a {
-    text-decoration: none;
-    color: #333 ;
-    margin: 0 15px;
-    font-weight: 500;
-}
-
-a:hover {
-    color: #007BFF;
-}
-
-.btn-inicio {
-    padding: 10px 20px;
+.btn-Login {
+    display: inline-block;
+    padding: 12px 24px;
     background-color: #007BFF;
-    color: white;
-    border: none;
+    color: #ffffff;
+    text-decoration: none;
     border-radius: 5px;
+    font-weight: bold;
+    margin: 20px auto;
+    text-align: center;
     cursor: pointer;
-    font-weight: 900;
+    align-items: center;
 }
 
+.beneficios {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.beneficios-section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.beneficios-section h2 {
+    margin-bottom: 40px;
+}
+
+.beneficios {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.beneficios li {
+    background: #FFFFFF;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    text-align: left;
+}
+
+.beneficios li strong {
+    display: block;
+    margin-bottom: 8px;
+    color: #263238;
+}
+
+.beneficios li p {
+    margin: 0;
+    color: #555;
+}
+
+.linha {
+    width: 345px;
+    height: 4px;
+    background-color: #007BFF;
+    margin: 0 auto 20px auto;
+    border-radius: 2px;
+    /* sobe 10px */
+    transform: translateY(-20px);
+}
+
+h1, h2 {
+    text-align: center;
+}
